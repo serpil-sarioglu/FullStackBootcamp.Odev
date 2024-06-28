@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DelegateAndEvent.Senaryo1
+namespace DelegateAndEvent
 {
     // Delegate Tanımlaması
     public delegate void OrderCompletedHandler(string message);

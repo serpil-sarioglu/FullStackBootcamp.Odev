@@ -1,0 +1,15 @@
+﻿@page
+@model Razor.Web.Pages.DataTransfer.IndexModel
+@{
+}
+<h1>Data Transfer (Razor Page) Index</h1>
+
+<p>Number: @Model.Number</p>
+
+@foreach (var number in Model.Numbers)
+{
+    <p>@number</p>
+}
+<br />
+
+<h1>Message(By ViewData): @ViewData["message"] </h1>

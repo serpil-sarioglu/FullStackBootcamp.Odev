@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DelegateAndEvent.Senaryo2
+namespace DelegateAndEvent
 {
     public class Character
     {
@@ -13,7 +13,7 @@ namespace DelegateAndEvent.Senaryo2
 
         public string CharacterName { get; set; }
 
-        public int CharacterHealth {  get; private set; }
+        public int CharacterHealth { get; private set; }
 
         public Character(string characterName, int characterHealth)
         {
@@ -31,7 +31,7 @@ namespace DelegateAndEvent.Senaryo2
                 CharacterHealth = 0;
             }
 
-            if (CharacterHealth == 0) 
+            if (CharacterHealth == 0)
             {
                 Console.WriteLine($"{CharacterName} karakteri öldü");
                 return;
@@ -42,8 +42,7 @@ namespace DelegateAndEvent.Senaryo2
                 HealthDecreased.Invoke(CharacterHealth);
             }
 
-        }       
+        }
 
     }
 }
-   
